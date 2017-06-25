@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Crystals Collector</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<h1>Crystals Collector!</h1>
+
+	<section>
+		<h2>Instructions:</h2><br>
+		<p>You will be given a random number at the start of the game<br><hr>There are four crystals below. By clicking on a crystals you will add a specific amount of points to your total score.<br><hr>You win the game by matching your total score to the random number, and you lose the game if your total score goes above the random number.<br><hr>The value of each crystal is hidden.<br>Each time when the game starts, the values of each crystal will change.</p>
+	</section>
+	
+
+	<img id ="blueGem" class="gemImg" src="assets/images/blue-gem.png">
+	<img id ="greenGem" class="gemImg" src="assets/images/green-gem.png">
+	<img id ="redGem" class="gemImg" src="assets/images/red-gem.png">
+	<img id ="yellowGem" class="gemImg" src="assets/images/yellow-gem.png">
+	
+	<div id="asideLeft">
+	<h3>Random Number To Match:</h3><br>
+		<p id="randNum"></p>
+	</div>
+	<div id="asideRight">
+	<h3>Your Current Score:</h3><br>
+		<p id="score"></p>
+	</div>
+
+	<div id="scoreRow">
+	<h3>Your Wins:</h3><br>
+		<p id="wins"></p>
+	</div>
+
+	<div id="lossesRow">
+	<h3>Your Losses:</h3><br>
+		<p id="losses">0</p>
+	</div>
+
+<!-- end of #wrap -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+body{
+	width: 960px;
+	background-image: url("../images/grey_wash_wall.png");
+	margin: auto;
+	font-family: "Roboto",sans-serif;
+}
+
+#wrap {
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+	background-color: rgba(255,255,255,0.4);
+	overflow: hidden;
+	padding: 10px 0 10px 0;
+	box-shadow: 6px 6px 15px #404040;
+}
+
+h1 {
+	font-family: "Lobster",sans-serif;
+	font-size: 50px;
+	color: white;
+	text-shadow: 5px 3px black;
+	margin-top: 10px;
+}
+
+h2 {
+	font-family: "Lobster",sans-serif;
+	font-size: 32px;
+	color: black;
+	text-decoration: underline;
+}
+
+h3 {
+	font-family: "Roboto",sans-serif;
+	text-decoration: underline;
+}
+
+section {
+	background-color: rgba(255,255,255,0.4);
+	text-align: center;
+	line-height: 25px;
+	margin-top: 25px;
+	padding: 30px 0 30px 0;
+}
+
+hr {
+	width: 80px;
+}
+
+.gemImg {
+	display: inline;
+	width: 220px;
+	height: auto;
+	margin: 35px 0 35px 0;
+	opacity: 1.0;
+}
+
+.gemImg:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.gemImg:active{
+	opacity: 1.0;
+}
+
+#asideRight {
+	float: left;
+	background-color: rgba(82,125,255,0.6);
+}
+
+#asideLeft {
+	float: right;
+	background-color: rgba(255,255,153,0.6);
+}
+
+#asideRight, #asideLeft {
+	padding: 20px 0 20px 0;
+	width: 50%;
+}
+
+#scoreRow {
+	background-color: rgba(0,255,153,0.6);
+	clear: both;
+}
+
+#lossesRow {
+	background-color: rgba(255,26,26,0.6);
+}
+
+#scoreRow, #lossesRow  {
+	width: 100%;
+	padding: 20px 0 20px 0;
+}
+
+#score, #randNum, #losses, #wins {
+	font-size: 50px;
+	font-weight: bold;
+}
