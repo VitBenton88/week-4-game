@@ -80,30 +80,26 @@ scoreID.html(currentScore);//publish current score to HTML
 blueGemID.on("click", function(){
 	currentScore += blueGemValue;
 	scoreID.html(currentScore);
-	winCheck();
-	lossCheck();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);
 
 });
 
 greenGemID.on("click", function(){
 	currentScore += greenGemValue;
 	scoreID.html(currentScore);
-	winCheck();
-	lossCheck();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);
 });
 
 redGemID.on("click", function(){
 	currentScore += redGemValue;
 	scoreID.html(currentScore);
-	winCheck();
-	lossCheck();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);
 });
 
 yellowGemID.on("click", function(){
 	currentScore += yellowGemValue;
 	scoreID.html(currentScore);
-	winCheck();
-	lossCheck();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);
 });
 
 //----------------END OF SCRIPT	
