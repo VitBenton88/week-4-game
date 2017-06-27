@@ -40,27 +40,26 @@ function gemValueGen(){
 
 function winCheck(){
 	if (currentScore == randNumtoMatch){
-		wins++;
-		$("#wins").html(wins);
 		var winAlert = alert("You got a win!");
-			if(winAlert = true){
+		if(winAlert = true){
+			wins++;
+			$("#wins").html(wins);
 			randNumtoMatchGen();
 			gemValueGen();
 			scoreID.html(0);
 			currentScore = 0;
 		};
 	};
-	return;
 };
 
 //loss checker:
 
 function lossCheck(){
 	if (currentScore > randNumtoMatch){
-		losses++;
-		$("#losses").html(losses);
-		var y = alert("You lost!");
-		if(y = true){
+		var lossConfirm = confirm("You lost!");
+		if(lossConfirm == true){
+			losses++;
+			$("#losses").html(losses);
 			randNumtoMatchGen();
 			gemValueGen();
 			scoreID.html(0);
@@ -71,10 +70,11 @@ function lossCheck(){
 
 //----------------END OF FUNCTIONS
 
-randNumtoMatchGen();
-gemValueGen();
-$("#wins").html(wins);
-scoreID.html(currentScore);
+randNumtoMatchGen();//generate random number for user to match
+gemValueGen();//generate values for gemstones
+
+$("#wins").html(wins);//publish current number of wins to HTML
+scoreID.html(currentScore);//publish current score to HTML
 
 
 blueGemID.on("click", function(){
@@ -82,6 +82,7 @@ blueGemID.on("click", function(){
 	scoreID.html(currentScore);
 	winCheck();
 	lossCheck();
+
 });
 
 greenGemID.on("click", function(){
