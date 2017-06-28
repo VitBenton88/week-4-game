@@ -36,6 +36,24 @@ function gemValueGen(){
 	console.log("yellow: " + yellowGemValue)
 };
 
+//apply current gemstone value to current score:
+
+function addGemValue(GemValue){
+	currentScore += GemValue;
+};
+
+//print current score to the scoreID var:
+
+function printCurrentScore(){	
+scoreID.html(currentScore);
+};
+
+//reset current score:
+
+function resetCurrentScore(){
+	currentScore = 0;
+};
+
 //win checker:
 
 function winCheck(){
@@ -46,8 +64,8 @@ function winCheck(){
 			$("#wins").html(wins);
 			randNumtoMatchGen();
 			gemValueGen();
-			scoreID.html(0);
-			currentScore = 0;
+			resetCurrentScore();
+			printCurrentScore();
 		};
 	};
 };
@@ -62,8 +80,8 @@ function lossCheck(){
 			$("#losses").html(losses);
 			randNumtoMatchGen();
 			gemValueGen();
-			scoreID.html(0);
-			currentScore = 0;
+			resetCurrentScore();
+			printCurrentScore();
 		};
 	};	
 };
@@ -77,29 +95,29 @@ $("#wins").html(wins);//publish current number of wins to HTML
 scoreID.html(currentScore);//publish current score to HTML
 
 
-blueGemID.on("click", function(){
-	currentScore += blueGemValue;
-	scoreID.html(currentScore);
-	setTimeout(function(){ lossCheck();winCheck(); }, 250);
+blueGemID.click(function(){
+	addGemValue(blueGemValue);
+	printCurrentScore();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);//delay lossCheck and winCheck so new score always prints
 
 });
 
-greenGemID.on("click", function(){
-	currentScore += greenGemValue;
-	scoreID.html(currentScore);
-	setTimeout(function(){ lossCheck();winCheck(); }, 250);
+greenGemID.click(function(){
+	addGemValue(greenGemValue);
+	printCurrentScore();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);//delay lossCheck and winCheck so new score always prints
 });
 
-redGemID.on("click", function(){
-	currentScore += redGemValue;
-	scoreID.html(currentScore);
-	setTimeout(function(){ lossCheck();winCheck(); }, 250);
+redGemID.click(function(){
+	addGemValue(redGemValue);
+	printCurrentScore();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);//delay lossCheck and winCheck so new score always prints
 });
 
-yellowGemID.on("click", function(){
-	currentScore += yellowGemValue;
-	scoreID.html(currentScore);
-	setTimeout(function(){ lossCheck();winCheck(); }, 250);
+yellowGemID.click(function(){
+	addGemValue(yellowGemValue);
+	printCurrentScore();
+	setTimeout(function(){ lossCheck();winCheck(); }, 250);//delay lossCheck and winCheck so new score always prints
 });
 
 //----------------END OF SCRIPT	
