@@ -59,7 +59,7 @@ function resetCurrentScore(){
 function winCheck(){
 	if (currentScore == randNumtoMatch){
 		var winAlert = alert("You got a win!");
-		if(winAlert = true){
+		if(winAlert == true){
 			wins++;
 			$("#wins").html(wins);
 			randNumtoMatchGen();
