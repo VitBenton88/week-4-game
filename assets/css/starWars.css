@@ -1,0 +1,58 @@
+body {
+	width: 960px;
+	margin: auto;
+	background-image: url("../images/starWarsBG.jpg");
+	background-color: black;
+	font-family: "Press Start 2P", sans-serif;
+}
+
+.charPick {
+	width: 100%;
+	margin: auto;
+}
+
+div {
+	text-align: center;
+}
+
+h1 {
+	color: yellow;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+
+.charImgs {
+	width: 175px;
+	height: auto;
+	opacity: 1;
+	box-shadow: 0px 0px 0px #888888;
+}
+
+.charImgs:hover{
+	cursor: pointer;
+	opacity: 0.8;
+	box-shadow: 8px 8px 1px yellow;
+}
+
+.charImgs:active{
+	cursor: pointer;
+	opacity: 1;
+	box-shadow: 8px 8px 1px green;
+}
+
+#LukeSkywalker{
+	border: 15px solid white;
+}
+
+#ObiWan{
+	border: 15px solid white;
+}
+
+#BobaFett{
+	border: 15px solid white;
+}
+
+#DarthVader{
+	border: 15px solid white;
+}
