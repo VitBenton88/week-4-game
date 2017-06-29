@@ -32,27 +32,19 @@ h1 {
 .charImgs:hover{
 	cursor: pointer;
 	opacity: 0.8;
-	box-shadow: 8px 8px 1px yellow;
+	box-shadow: 0px 0px 20px yellow;
 }
 
 .charImgs:active{
 	cursor: pointer;
 	opacity: 1;
-	box-shadow: 8px 8px 1px green;
+	box-shadow: box-shadow: 0px 0px 40px yellow;
 }
 
-#LukeSkywalker{
+.unselected{
 	border: 15px solid white;
 }
 
-#ObiWan{
-	border: 15px solid white;
-}
-
-#BobaFett{
-	border: 15px solid white;
-}
-
-#DarthVader{
-	border: 15px solid white;
+.enemySelect{
+	border: 15px solid red;
 }

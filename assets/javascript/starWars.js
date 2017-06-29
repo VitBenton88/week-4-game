@@ -11,9 +11,14 @@ $(document).ready(function() {
 	function firstSelection(char){
 
 		$(char).click(function(){
-			$(char).css('border', '15px solid red');
-			$(char).appendTo($('#enemPick'));
-
+			if (char = LukeImg){
+				$(ObiImg).addClass('enemySelect');
+				$(BobaImg).addClass('enemySelect');
+				$(DarthImg).addClass('enemySelect');
+				$(ObiImg).appendTo($('#enemPick'));
+				$(BobaImg).appendTo($('#enemPick'));
+				$(DarthImg).appendTo($('#enemPick'));
+			};
 		});
 	};
 
@@ -23,15 +28,6 @@ $(document).ready(function() {
 	firstSelection(ObiImg);
 	firstSelection(BobaImg);
 	firstSelection(DarthImg);
-
-
-
-
-
-
-
-
-
 
 
 	//----------------END OF SCRIPT	
