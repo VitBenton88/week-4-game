@@ -1,14 +1,41 @@
 body {
-	width: 960px;
+background-image: url("../images/starWarsBG.jpg");
+background-color: black;
+font-family: "Press Start 2P", sans-serif;
+width: 1200px;
+margin: auto;
+}
+
+#wrapper {
 	margin: auto;
-	background-image: url("../images/starWarsBG.jpg");
-	background-color: black;
-	font-family: "Press Start 2P", sans-serif;
+	width: 960px;
 }
 
 .charPick {
 	width: 100%;
 	margin: auto;
+}
+
+.attackerStats {
+	float: left;
+	color: yellow;
+	padding: 20px;
+	font-size: 16px;
+	display: none;
+	margin-top: -150px;
+	margin-left: 60px;
+
+}
+
+.defenderStats {
+	color: yellow;
+	padding: 20px;
+	float: right;
+	bottom: 100px;
+	font-size: 16px;
+	display: none;
+	margin-top: -150px;
+	margin-right: -50px;
 }
 
 div {
@@ -22,8 +49,8 @@ h1 {
 	margin: 20px 0 10px 0;
 }
 
-.charImgs {
-	width: 175px;
+img {
+	width: 150px;
 	height: auto;
 	opacity: 1;
 	box-shadow: 0px 0px 0px yellow;
@@ -41,7 +68,7 @@ h1 {
 	box-shadow: 0px 0px 40px yellow;
 }
 
-.unselected, #attacker{
+.unselected, .THEattacker{
 	border: 15px solid white;
 }
 
@@ -53,11 +80,47 @@ h1 {
 	display: none;
 }
 
-#selectedDefender {
-	border: 15px solid black;
+.selectedDefender {
+	border: 15px solid blue;
+}
+
+.selectedDefender:hover{
+	opacity: 1;
+	cursor: auto;
+}
+
+.THEattacker:hover{
+	opacity: 1;
+	cursor: auto;
+}
+
+#buttonWrap {
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	clear: both;
 }
 
 button {
-	background-color: yellow;
-	margin: auto;
+    background-color: yellow;
+    border: none;
+    padding: 15px 32px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Press Start 2P", sans-serif;
+    display: none;
+}
+
+button:hover{
+	cursor: pointer;
+	opacity: 0.8;
+	box-shadow: 0px 0px 0px yellow;
+}
+
+button:active{
+	cursor: pointer;
+	opacity: 1;
+	box-shadow: 0px 0px 0px yellow;
 }
